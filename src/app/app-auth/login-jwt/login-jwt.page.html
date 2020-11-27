@@ -1,0 +1,40 @@
+
+    <div class="content_pvn">
+        <div class="logo">
+            <img src="http://222.255.252.41/content/uploads/logo.jpg" alt="" style="width: 40%; height: auto">
+            <div style="color: white;font-size: 12px">TẬP ĐOÀN DẦU KHÍ QUỐC GIA VIỆT NAM </div>
+            <div style="color: white;font-size: 12px">HỆ THỐNG CSDL AN TOÀN SỨC KHỎE MÔI TRƯỜNG </div>
+        </div>
+        <form [formGroup]="credentialsForm" (ngSubmit)="onSubmit()">
+            <div class="login-form">
+                <ion-list lines="none" class="ion-margin-top">
+                    <ion-item>
+                        <ion-icon slot="start" color="lightgrey" name="ios-mail-outline"></ion-icon>
+                        <ion-input formControlName="Username" type="email" placeholder="Tài khoản" ></ion-input>
+                    </ion-item>
+
+                    <ion-item>
+                        <ion-icon slot="start" color="lightgrey" name="ios-key-outline"></ion-icon>
+                        <ion-input formControlName="PasswordMobile" type="password" placeholder="Mật Khẩu" ></ion-input>
+                    </ion-item>
+
+                </ion-list>
+                <!-- [disabled]="!credentialsForm.valid" -->
+
+
+
+                <ion-button  mode="ios"  color="pvn_button" expand="block" type="submit"   >
+                    Đăng nhập
+                </ion-button>
+
+                <!-- <ion-button mode="ios" color="red" expand="block" type="button" class="ion-margin-top" (click)="logOut()">
+                     Logout
+                 </ion-button>-->
+                <!--<ion-text color="dark">
+                        <h2 text-center class="ion-margin-bottom main-header8">
+                            By clicking Sign up you agree to the following Terms ans Conditions without reservation
+                        </h2>
+                    </ion-text>-->
+            </div>
+        </form>
+    </div>
